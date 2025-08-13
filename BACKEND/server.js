@@ -16,7 +16,7 @@ app.use(express.json());
 // Initialize database tables
 async function initializeDatabase() {
   try {
-    // Create users table
+    // Users table
     await query(`
       CREATE TABLE IF NOT EXISTS users (
         id SERIAL PRIMARY KEY,
@@ -28,7 +28,7 @@ async function initializeDatabase() {
       )
     `);
 
-    // Create credit_inputs table
+    // Credit inputs table
     await query(`
       CREATE TABLE IF NOT EXISTS credit_inputs (
         id SERIAL PRIMARY KEY,
@@ -42,7 +42,7 @@ async function initializeDatabase() {
       )
     `);
 
-    // Create credit_results table
+    // Credit results table
     await query(`
       CREATE TABLE IF NOT EXISTS credit_results (
         id SERIAL PRIMARY KEY,
@@ -74,7 +74,8 @@ app.get('/api/admin/stats', authenticate, isAdmin, adminController.getUserStats)
 app.patch('/api/admin/users/:userId', authenticate, isAdmin, adminController.updateUserRole);
 
 // Start server
-app.listen(config.PORT, async () => {
+const PORT = config.PORT;
+app.listen(PORT, async () => {
   await initializeDatabase();
-  console.log(`Server running on port ${config.PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
