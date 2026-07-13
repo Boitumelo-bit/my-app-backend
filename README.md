@@ -369,34 +369,22 @@ Fields:
 
 ## User Dashboard
 
-![User Dashboard](screenshots/dashboard.png)
+![User Dashboard](screenshots/Userdashboard.jpeg)
 
----
 
 ## Credit Evaluation Form
 
-![Credit Form](screenshots/credit-form.png)
+![Credit Evaluation Form](screenshots/CreditEvaluationForm.jpeg)
 
----
 
-## Credit Result
+## Credit Evaluation Results
 
-![Credit Result](screenshots/result.png)
+![Credit Evaluation Results](screenshots/CreditEvaluationResults.jpeg)
 
----
 
 ## Admin Dashboard
 
-![Admin Dashboard](screenshots/admin-dashboard.png)
-
----
-
-## User Management
-
-![User Management](screenshots/user-management.png)
-
----
-
+![Admin Dashboard](screenshots/Admin_Dashboard.jpeg)
 # Installation and Setup
 
 ## Clone Frontend Repository
